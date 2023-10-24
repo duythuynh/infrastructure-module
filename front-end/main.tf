@@ -14,7 +14,7 @@ resource "azurerm_resource_group" "demo_frontend_resources" {
 }
 
 resource "azurerm_static_site" "duythuynh_app_static_demo" {
-  name                = "duythuynh-app-static-demo-1"
+  name                = "duythuynh-app-static-demo-no-bug"
   resource_group_name = azurerm_resource_group.demo_frontend_resources.name
   location            = "East Asia"
   sku_tier = var.sku_tier_value
